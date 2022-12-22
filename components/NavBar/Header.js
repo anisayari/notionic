@@ -13,7 +13,6 @@ import {
 } from '@heroicons/react/outline'
 import Social from '../Common/Social.js'
 import ThemeSwitcher from './ThemeSwitcher.js'
-import LangSwitcher from './LangSwitcher.js'
 import { motion } from 'framer-motion'
 
 const NavBar = () => {
@@ -89,10 +88,7 @@ const NavBar = () => {
             )
         )}
       </ul>
-
       <ThemeSwitcher />
-      <LangSwitcher />
-
       {/* Mobile Phone Menu */}
       <div className='md:hidden mr-2 block '>
         <button
@@ -179,13 +175,12 @@ const Header = ({ navBarTitle, fullWidth }) => {
               <motion.div className='h-6 hover:text-blue-500 dark:hover:text-blue-500 fill-current'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  width='24'
-                  height='24'
+                  width='38'
+                  height='38'
                   viewBox='0 0 100 100'
                 >
-                  <g transform='translate(0.000000,100) scale(0.080000,-0.080000)'>
-                    <path d='M762 1203 c-6 -15 -13 -46 -17 -68 -4 -22 -13 -49 -20 -61 -15 -23 -122 -69 -257 -109 -49 -14 -88 -28 -88 -29 0 -2 33 -20 73 -40 49 -24 87 -36 115 -36 28 0 42 -4 42 -13 0 -34 -295 -517 -390 -639 -40 -52 -4 -28 86 56 49 46 105 109 124 141 19 31 64 98 100 148 77 108 125 186 173 283 20 39 46 78 59 86 13 8 69 34 126 58 107 45 118 57 110 111 -3 21 -10 25 -78 34 l-75 10 -5 45 c-5 42 -7 45 -36 48 -26 3 -33 -1 -42 -25z' />
-                    <path d='M754 616 c-40 -19 -88 -39 -108 -46 -43 -14 -45 -30 -7 -72 25 -28 33 -31 80 -30 39 1 54 -3 58 -15 7 -18 -30 -140 -58 -192 -36 -67 6 -93 135 -84 l86 6 0 -26 c0 -14 -4 -37 -10 -51 -5 -14 -8 -26 -6 -26 7 0 110 68 129 85 11 10 17 30 17 60 0 62 -22 70 -150 57 -52 -5 -98 -6 -103 -2 -4 3 3 31 16 61 13 30 32 78 42 108 10 30 28 70 41 89 26 38 30 63 14 93 -17 31 -91 25 -176 -15z' />
+                  <g>
+                    <path d="M 6.3 55.3 L 22.4 8.7 L 16.1 8.1 L 16.1 0 L 39 0 L 59.4 57.7 L 59.5 57.7 L 65.2 58 L 65.2 66.5 L 39.4 66.5 L 39.4 58.4 L 43.2 58.1 Q 44.534 57.943 45.191 57.54 A 1.673 1.673 0 0 0 45.5 57.3 A 1.061 1.061 0 0 0 45.769 56.822 Q 45.905 56.332 45.725 55.555 A 6.277 6.277 0 0 0 45.6 55.1 L 43.5 48.9 L 20.1 48.9 L 17.1 57.7 L 23.1 58 L 23.1 66.5 L 0 66.5 L 0 58.4 L 3.3 58.1 Q 5.32 57.908 6.23 55.495 A 7.589 7.589 0 0 0 6.3 55.3 Z M 32.1 11.2 L 31.8 11.2 L 22.5 39.7 L 41.1 39.7 L 32.1 11.2 Z" />
                   </g>
                 </svg>
               </motion.div>

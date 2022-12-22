@@ -185,10 +185,7 @@ const Layout = ({ children, blockMap, frontMatter, fullWidth = false, subPage = 
             </div>
           )}
         </article>
-        <Aside subPageTitle={subPageTitle} frontMatter={frontMatter} />
       </motion.div>
-
-      <PostFooter />
       <Comments frontMatter={frontMatter} />
     </Container>
   )
