@@ -1,28 +1,21 @@
-import BLOG from '@/blog.config'
 import Avatar from './NotionAvatar.js'
 import Social from '../Common/Social.js'
-import { lang } from '@/lib/lang'
-import { useRouter } from 'next/router'
-import { useState } from 'react'
+// import { lang } from '@/lib/lang'
+// import { useRouter } from 'next/router'
 import dynamic from 'next/dynamic'
 import { NotionRenderer } from 'react-notion-x'
 
-const Collection = dynamic(() =>
-  import('react-notion-x/build/third-party/collection').then((m) => m.Collection), { ssr: true }
+const Collection = dynamic(
+  () =>
+    import('react-notion-x/build/third-party/collection').then(
+      (m) => m.Collection
+    ),
+  { ssr: true }
 )
 
 const Hero = ({ blockMap }) => {
-  const [showCopied, setShowCopied] = useState(false)
-  const { locale } = useRouter()
-  const t = lang[locale]
-
-  const clickCopy = async () => {
-    setShowCopied(true)
-    navigator.clipboard.writeText(BLOG.link + '/feed')
-    setTimeout(() => {
-      setShowCopied(false)
-    }, 1000)
-  }
+  // const { locale } = useRouter()
+  // const t = lang[locale]
 
   return (
     <>

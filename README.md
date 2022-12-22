@@ -39,7 +39,6 @@ More details about Notionic deployment:
 - [English](https://zuolan.me/en/notionic_en)
 - [中文](https://zuolan.me/notionic)
 
-
 ## Reference & License
 
 - [Notion-X](https://github.com/NotionX/react-notion-x)

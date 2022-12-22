@@ -8,9 +8,7 @@ import NotFound from '@/components/NotFound'
 const Post = ({ post, blockMap }) => {
   const router = useRouter()
   if (router.isFallback) {
-    return (
-      <Loading />
-    )
+    return <Loading />
   }
   if (!post) {
     return <NotFound statusCode={404} />

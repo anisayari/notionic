@@ -24,13 +24,18 @@ const BLOG = {
     twitter: 'https://twitter.com/DFintelligence',
     github: 'https://github.com/anisayari',
     telegram: 'https://t.me/+LFjzIVpv3mY5Y2Jk',
-    youtube :  'https://www.youtube.com/channel/UCnEHCrot2HkySxMTmDPhZyg',
-    linkedin : 'https://www.linkedin.com/in/anis-ayari/',
-    discord : 'https://discord.gg/cnH8rW4YUD',
-    twitch : 'https://www.twitch.tv/defendintelligence'
+    youtube: 'https://www.youtube.com/channel/UCnEHCrot2HkySxMTmDPhZyg',
+    linkedin: 'https://www.linkedin.com/in/anis-ayari/',
+    discord: 'https://discord.gg/cnH8rW4YUD',
+    twitch: 'https://www.twitch.tv/defendintelligence'
   },
   seo: {
-    keywords: ['Anis AYARI', 'Defend Intelligence', 'Artificial Intelligence' , 'Machine Learning'],
+    keywords: [
+      'Anis AYARI',
+      'Defend Intelligence',
+      'Artificial Intelligence',
+      'Machine Learning'
+    ],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS! Edit .env file!

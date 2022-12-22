@@ -16,7 +16,8 @@ const Pagination = ({ page, showNext }) => {
       className={`flex font-medium text-black dark:text-gray-100 ${additionalClassName}`}
     >
       {currentPage !== 1 && (
-        <Link scroll={false}
+        <Link
+          scroll={false}
           href={
             currentPage - 1 === 1
               ? `${BLOG.path || '/'}`

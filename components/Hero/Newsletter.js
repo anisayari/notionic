@@ -8,8 +8,12 @@ import { NewspaperIcon, ClipboardCheckIcon } from '@heroicons/react/outline'
 import dynamic from 'next/dynamic'
 import { NotionRenderer } from 'react-notion-x'
 
-const Collection = dynamic(() =>
-  import('react-notion-x/build/third-party/collection').then((m) => m.Collection), { ssr: true }
+const Collection = dynamic(
+  () =>
+    import('react-notion-x/build/third-party/collection').then(
+      (m) => m.Collection
+    ),
+  { ssr: true }
 )
 
 const NewsletterHero = ({ blockMap }) => {
@@ -55,7 +59,9 @@ const NewsletterHero = ({ blockMap }) => {
                   <span className='text-xs text-gray-600 dark:text-day mb-1'>
                     {t.HERO.NEWSLETTER.TG_CHANNEL}
                   </span>
-                  <span className='font-medium'>@{BLOG.telegramChannelName}</span>
+                  <span className='font-medium'>
+                    @{BLOG.telegramChannelName}
+                  </span>
                 </span>
               </button>
             </Link>
@@ -69,7 +75,9 @@ const NewsletterHero = ({ blockMap }) => {
                   <span className='text-xs text-gray-600 dark:text-day mb-1'>
                     {t.HERO.RSS_BUTTON_DES_COPIED}
                   </span>
-                  <span className='font-medium'>{t.HERO.RSS_BUTTON_COPIED}</span>
+                  <span className='font-medium'>
+                    {t.HERO.RSS_BUTTON_COPIED}
+                  </span>
                 </span>
               </button>
             ) : (
@@ -90,7 +98,9 @@ const NewsletterHero = ({ blockMap }) => {
                   <span className='text-xs text-gray-600 dark:text-day mb-1'>
                     {t.HERO.RSS_BUTTON_DES}
                   </span>
-                  <span className='font-medium'>{t.HERO.NEWSLETTER.RSS_BUTTON}</span>
+                  <span className='font-medium'>
+                    {t.HERO.NEWSLETTER.RSS_BUTTON}
+                  </span>
                 </span>
               </button>
             )}
