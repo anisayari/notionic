@@ -9,7 +9,7 @@ const BLOG = {
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
-  darkBackground: '#0f1014', // use hex value, don't forget '#'
+  darkBackground: '#16191c', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Notionic in a folder
   since: 2022, // If leave this empty, current year will be used.
   postsPerPage: 10,
@@ -41,7 +41,7 @@ const BLOG = {
   telegramChatId: '', // The chat id of your Telegram bot
   telegramChannelUrl: '', // The link of your Telegram channel
   telegramChannelName: '', // The name of your Telegram channel
-  craftConfigShareUrl: '', // The link to share your craft config
+  craftConfigShareUrl: 'https://www.craft.do/s/kQtcWqkv98cHhB', // The link to share your craft config
   analytics: {
     provider: 'Google Analytics', // Currently we support Google Analytics, Ackee and Umami, please fill with 'ga' or 'ackee' or 'umami', leave it empty to disable it.
     umamiConfig: {
