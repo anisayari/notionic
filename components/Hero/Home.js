@@ -1,15 +1,9 @@
 import BLOG from '@/blog.config'
-import Link from 'next/link'
 import Avatar from './NotionAvatar.js'
 import Social from '../Common/Social.js'
 import { lang } from '@/lib/lang'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-import {
-  MailIcon,
-  RssIcon,
-  ClipboardCheckIcon
-} from '@heroicons/react/outline'
 import dynamic from 'next/dynamic'
 import { NotionRenderer } from 'react-notion-x'
 
