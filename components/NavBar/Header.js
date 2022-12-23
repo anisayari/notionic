@@ -6,8 +6,6 @@ import { useRouter } from 'next/router'
 import {
   HomeIcon,
   NewspaperIcon,
-  CollectionIcon,
-  SparklesIcon,
   SearchIcon,
   MenuIcon
 } from '@heroicons/react/outline'
