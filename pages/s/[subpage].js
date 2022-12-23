@@ -84,7 +84,7 @@ export async function getStaticProps({ params: { subpage } }) {
   const NOTION_SPACES_ID = BLOG.notionSpacesId
   const pageAllowed = (page) => {
     // When page block space_id = NOTION_SPACES_ID
-    let allowed = false
+    let allowed = true
     Object.values(page.block).forEach((block) => {
       if (!allowed && block.value && block.value.space_id) {
         allowed = NOTION_SPACES_ID.includes(block.value.space_id)
